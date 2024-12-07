@@ -1,0 +1,19 @@
+body{
+    background-image: url(../img/photo-1655998233171-ee5b130acba5.jpg);
+    background-position: center;
+    background-size: cover;
+
+    }
+    a:hover{
+        text-decoration: underline !important ;
+    }
+ button:hover{
+    background-color: white !important;
+    color: rgba(233, 14, 87, 0.822) !important;
+ }
+  button{
+    background-color: rgba(233, 14, 87, 0.822) !important
+ }
+ input:focus {
+    background-color: white !important;
+ }

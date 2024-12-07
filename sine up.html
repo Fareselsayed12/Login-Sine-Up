@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    
+</head>
+<body>
+    
+<section class="login my-5 w-75 mx-auto">
+    <div class="container">
+        <div class="row border rounded-5">
+            <h2 class="text-center py-3 text-info bg-white rounded-bottom-5 w-50 mx-auto  ">Smart Login System</h2>
+            <div class="box py-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-12 ">
+        <input oninput="    validationInputs(this , 'nameMess')
+" type="text" placeholder="Enter your name" name="Name" class="form-control bg-transparent rounded-5" id="inputName">
+        <label for="inputName"></label>
+        <p class="alert-danger alert rounded-5  d-none" id="nameMess"> "Please enter at least 3 alphabetic characters."</p>
+                    </div>
+                    <div class="col-md-12">
+        <input oninput="    validationInputs(this , 'emailMess')
+" type="email" placeholder="Enter your email" name="Email" class="form-control bg-transparent rounded-5" id="inputEmail">
+        <label for="inputEmail"></label>
+        <p class="alert-danger alert rounded-5 d-none" id="emailMess"> "Please enter a valid email address, for example: example@domain.com."</p>
+
+                    </div>
+                    <div class="col-md-12">
+        <input oninput="    validationInputs(this , 'passMess')
+" type="password" placeholder="Enter your password" name="Password" class="form-control bg-transparent rounded-5" id="inputPassword">
+        <label for="inputPassword"></label>
+        <p class="alert-danger alert rounded-5 d-none" id="passMess"> Password must Contains  at least one uppercase letter,at least one lowercase letter,at least one number and at least one special character (e.g., #, ?, !, @, $, %).,Must be at least 8 characters long."</p>
+
+        <button onclick="addAcc()" class="btn btn-danger w-100 rounded-5">Sign UP </button>
+                    </div>
+                    <p id="exist" class="d-none"><span class="text-danger m-3">All inputs is required</span></p>
+                    <div class="mt-5 text-info fs-5">You have an account?  <a href="index.html" class="text-decoration-none text-white">Sign in</a></div>
+</div>
+
+        </div>
+    </div>
+
+</section>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
